@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Um espaço seguro dentro do My Dystopia para você registrar suas confissões e pensamentos de forma anônima.">
+    <link rel="stylesheet" href="style.css">
+    <title>Minhas Confissões - My Dystopia</title>  
 </head>
 <body>
-    
+    <header>
+        <h1 id="titulo">My Dystopia</h1>
+            <div id="botopo"> <!--botões do topo-->
+                <a href="pag-inicial.html"><button class="home">Início</button></a>
+                <a href="minhas-confi.html"><button class="minhas-confi">Minhas Confissões</button></a>
+                <a href="comunidade.html"><button class="Comun">Comunidade</button></a>
+                <a href="disque-ajuda.html"><button class="Dis">Disque Ajuda</button></a>
+            </div>
+        </header>
+    <main>
+        <section id="confissoes-do-usuario">
+            <h1>Minhas Confissões</h1>
+            <blockquote>
+            <p>"Tornar consciente um fato inconsciente tem efeito curativo"</p>
+            <cite>— Sigmund Freud</cite>
+            </blockquote>
+            <form id="confissao-form">
+                <textarea id="confissao-input" placeholder="A cura também vem pela fala!" required>
+                </textarea>
+                <button type="submit">Salvar Confissão</button>
+            </form>
+            <div id="lista-confissoes">
+                <!-- As confissões do usuário serão exibidas aqui -->
+            </div>
+        </section>
+    </main>
+    <script>
+    </script>
+        <footer>
+            <h4 id="mensagem-final">Você foi criado para algo maior.</h4>
+            <h5 id="contato">Fale conosco!</h5>
+            <p>Email: contato@mydystopia.com</p> 
+            <p>&copy; 2026 My Dystopia. Todos os direitos reservados.</p>
+        </footer>
 </body>
 </html>
