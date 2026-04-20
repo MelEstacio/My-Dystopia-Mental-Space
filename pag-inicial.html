@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Dystopia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="My Dystopia é um espaço onde você pode compartilhar suas confissões, pensamentos e sentimentos mais profundos. Aqui, você encontrará um ambiente acolhedor e seguro para expressar suas emoções sem julgamentos. Junte-se à nossa comunidade e descubra que você não está sozinho em suas experiências.">
+        <link rel= "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <header>
+        <h1 id="titulo">My Dystopia</h1>
+            <div id="botopo"> <!--botões do topo-->
+                <button class="home">Início</button>
+                <button class="minhaco">Minhas Confissões</button>
+                <button class="Comun">Comunidade</button>
+                <button class="Dis">Disque Ajuda</button>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2 class="subtitulo">Seus pensamentos cabem aqui.</h2>
+                <p class="paum">O <strong>My Dystopia</strong>  foi criado para ser um espaço seguro <br> e acolhedor onde você pode compartilhar suas confissões, <br> pensamentos e sentimentos mais profundos sem julgamentos.</p> <!--Primeiro Parágrafo-->
+            </section>
+            <section> <!--Aqui ficará a seção de confissões, onde as pessoas poderão ler as confissões de outras pessoas.-->
+                <h2 class="subtitulo">Confissões Para Se Conectar</h2>
+                <div class="caixa-confissões"> 
+                    <article class="caixaum">
+                        <h3 class="confium">Poeira Galáctica</h3> <!--Aqui ficará um exemplo de confissão-->
+                        <blockquote>
+                            <p><em>"Sinto um vazio do tamanho <br>do mundo.."</em></p>
+                        </blockquote>
+                    </article>
+                    <article class="caixões">
+                        <h3 class="confiôes"> Fada Estelar</h3><!--Aqui ficará um exemplo de confissão-->
+                        <blockquote>
+                        <p><em>“A minha dor me consome,<br> mas eu não quero desistir."</em></p>
+                        </blockquote>
+                    </article>
+                    <article class="caixeis">
+                        <h3 class="confieis">Vento Nebuloso</h3> <!--Aqui ficará um exemplo de confissão-->
+                        <blockquote>
+                        <p><em>"Às vezes, sinto que estou me <br>afogando em um mar<br> de pensamentos."</em></p>
+                        </blockquote>
+                    </article>
+                </div><!---Nessa div, todas as caixas ficarão lado a lado no centro da página-->
+            <section id="citações-inspiradoras">
+                <h3>Citações de Mentes Sábias</h3>
+                <div class="mentes-sabias"> 
+                    <div class="slides-wrapper">
+                        <div class="slide-item">
+                            <blockquote id="citacao-um">"Em meio ao inverno, eu encontrei, dentro de mim, um verão invencível."
+                            </blockquote>
+                            <cite>Albert Camus</cite>
+                        </div>
+                        <div class="slide-item">
+                            <blockquote id="citacao-dois">"A vida é a arte do encontro, embora haja tanto desencontro pela vida."
+                            </blockquote>
+                            <cite>Vinicius de Moraes</cite>
+                        </div>
+                        <div class="slide-item">
+                            <blockquote id="citacao-tres">"A dor é inevitável, o sofrimento é opcional."
+                            </blockquote>
+                            <cite>Bertrand Russell</cite>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="navegacao-citacoes">
+                <button class="btn-nav voltar" aria-label="Citação anterior">⬅️</button>
+                <div class="dots-container">
+                    <button class="dot active" aria-label="Ir para citação 1"></button>
+                    <button class="dot" aria-label="Ir para citação 2"></button>
+                    <button class="dot" aria-label="Ir para citação 3"></button>
+                </div>
+                <button class="btn-nav seguir" aria-label="Próxima citação">➡️</button>
+            </div>
+        <section id="perguntas-iniciais"> <!--Aqui ficará a seção de perguntas iniciais-->
+            <h3 class="Primeira-perg">Qual o tamanho da sua dor em Km?</h3> <!--Ao fundo, quero que apareça suavemente algum exemplo de resposta.-->
+                <div class="resposta1">
+                    <label for="resposta-exemplo"></label>
+                    <textarea id="resposta-exemplo" placeholder="Anos-luz de distância."></textarea>
+                </div>
+            <h3 class="Segunda-perg"> Qual a cor da sua tristeza?</h3>
+                <div class="resposta2">
+                    <label for="resposta-exemplo2"></label>
+                    <textarea id="resposta-exemplo2" placeholder="Um cinza profundo."></textarea>
+                </div>
+             <h3 class="Terceira-perg"> Se a sua dor fosse um som, qual seria?</h3>
+                <div class="resposta3">
+                    <label for="resposta-exemplo3"></label>
+                    <textarea id="resposta-exemplo3" placeholder="O silêncio ensurdecedor."></textarea>
+                </div>
+             <h3 class="Quarta-perg"> E se você pudesse imaginar sua vida sem esses problemas agora, ela ainda seria ruim?</h3>
+                <div class="resposta4">
+                    <label for="resposta-exemplo4"></label>
+                    <textarea id="resposta-exemplo4" placeholder="Talvez naõ fosse tão ruim assim..."></textarea>
+                </div>
+        </section>
+        <section id="guardando-desabafos"> <!--Aqui o usuário clica para salvar suas respostas.-->
+            <button id="salvar-respostas">Guardar minhas respostas</button>
+        </section>
+        <section id="compartilhar-confissao">
+            <p class="paragrafo-compartilhar">Junte-se à nossa comunidade e descubra que você não está sozinho <br>em suas experiências. Compartilhe suas confissões e encontre apoio <br> entre aqueles que entendem o que você está passando.</p>
+            <button class="compartilhar">Compartilhar Minha Confissão e Conectar-me Com Um Amigo</button>
+        </section>
+        </main>
+        <script>
+        </script>
+        <footer>
+            <h4 id="mensagem-final">Você foi criado para algo maior.</h4>
+            <h5 id="contato">Fale conosco!</h5>
+            <p>Email: contato@mydystopia.com</p> 
+            <p>&copy; 2026 My Dystopia. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>
