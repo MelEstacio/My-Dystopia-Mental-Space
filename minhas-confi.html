@@ -31,10 +31,38 @@
             </form>
             <div id="lista-confissoes">
                 <!-- As confissões do usuário serão exibidas aqui -->
+                 <p id="confissao-usuario"></p>
+                 <p id="salva"></p>
             </div>
+            <button type="submit" id="apagar-confissao">Apagar Confissão</button>
+
         </section>
     </main>
     <script>
+        // Função para salvar a confissão no localStorage
+        const form = document.getElementById('confissao-form');
+        const listaConfissoes = document.getElementById('lista-confissoes');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const confissao = document.getElementById('confissao-input').value.trim();
+            localStorage.setItem('confissao', confissao);
+            document.getElementById('confissao-input').value = '';
+            if (confissao) {
+                document.getElementById('salva').textContent = 'Confissão salva com sucesso!';
+                document.getElementById('confissao-usuario').textContent = confissao;
+            } else { document.getElementById('salva').textContent = 'por favor, se confesse!'; }
+
+        }); 
+
+        // Funçao para apagar a confissão do localStorage
+        const apagar_confissao = document.getElementById('apagar-confissao');
+        apagar_confissao.addEventListener("click", function(){
+            localStorage.removeItem('confissao');
+            document.getElementById('confissao-usuario').textContent = '';
+            document.getElementById('salva').textContent = 'Confissão apagada com sucesso!';
+        })
+
     </script>
         <footer>
             <h4 id="mensagem-final">Você foi criado para algo maior.</h4>
